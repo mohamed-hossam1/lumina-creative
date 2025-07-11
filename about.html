@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet the creative team at Lumina and learn about our services in photography, web design, and graphic design.">
-    <script src="https://kit.fontawesome.com/3de0282686.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Lumina is a creative agency specializing in photography, web design, and graphic design. We craft distinct and innovative projects.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico" />
-    <title>About Us - Lumina</title>
+    <title>Lumina Creative</title>
+    <script src="https://kit.fontawesome.com/3de0282686.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({ duration: 1000 });
+      });
+    </script>
     <nav class="nav-bar">
         <img src="./images/logo.png" alt="Lumina agency logo" class="logo">
         <ul>
@@ -22,63 +30,63 @@
         </ul>
     </nav>
 
-    <section>
-        <h1 class="sub-hero"><span>Inspired</span> minds, shaping exceptional projects fueled by <span>ingenuity</span></h1>
-    </section>
+    <main data-aos="fade-up">
+        <header>
+            <h1 class="sub-hero"><span>Inspired</span> minds, shaping exceptional projects fueled by <span>ingenuity</span></h1>
+        </header>
 
-    <section class="Services" id="Services">
-        <h2 class="Services-header">Our Services</h2>
-        <div class="cards">
-            <div>
-                <h3>Photography</h3>
-                <p>We capture unforgettable moments and turn them into story-telling images, for products, events, or portraits.</p>
+        <section class="Services" id="Services" aria-label="Our Services">
+            <h2 class="Services-header">Our Services</h2>
+            <div class="cards">
+                <div>
+                    <h3>Photography</h3>
+                    <p>We capture unforgettable moments and turn them into story-telling images, for products, events, or portraits.</p>
+                </div>
+                <div>
+                    <h3>Web Design & Development</h3>
+                    <p>We build modern, responsive websites that reflect your brand's identity and provide a unique user experience.</p>
+                </div>
+                <div>
+                    <h3>Graphic Design</h3>
+                    <p>We design complete visual identities, from logos to print materials, to make your brand stand out in the market.</p>
+                </div>
             </div>
-            <div>
-                <h3>Web Design & Development</h3>
-                <p>We build modern, responsive websites that reflect your brand's identity and provide a unique user experience.</p>
+        </section>
+
+        <section class="team" aria-label="Team Members">
+            <h2>Our Team</h2>
+            <div class="team-cards">
+                <div>
+                    <img src="./images/team1.jpg" alt="Photo of Kevin Samson, Founder">
+                    <h4>Kevin Samson</h4>
+                    <p>Founder</p>
+                </div>
+                <div>
+                    <img src="./images/team2.jpg" alt="Photo of Rebecca Williams, Photographer">
+                    <h4>Rebecca Williams</h4>
+                    <p>Photographer</p>
+                </div>
+                <div>
+                    <img src="./images/team3.jpg" alt="Photo of Ben Markson, Designer & Developer">
+                    <h4>Ben Markson</h4>
+                    <p>Designer/Developer</p>
+                </div>
             </div>
-            <div>
-                <h3>Graphic Design</h3>
-                <p>We design complete visual identities, from logos to print materials, to make your brand stand out in the market.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="team">
-        <h2>Our Team</h2>
-        <div class="team-cards">
-            <div>
-                <img src="./images/team1.jpg" alt="Photo of Kevin Samson, Founder">
-                <h4>Kevin Samson</h4>
-                <p>Founder</p>
-            </div>
-            <div>
-                <img src="./images/team2.jpg" alt="Photo of Rebecca Williams, Photographer">
-                <h4>Rebecca Williams</h4>
-                <p>Photographer</p>
-            </div>
-            <div>
-                <img src="./images/team3.jpg" alt="Photo of Ben Markson, Designer & Developer">
-                <h4>Ben Markson</h4>
-                <p>Designer/Developer</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <hr>
 
     <footer>
-        <img src="./images/logo.png" alt="Lumina agency logo">
-
+        <img src="./images/logo.png" alt="Lumina agency logo" loading="lazy">
         <div class="Follow">
             <h4>Follow Us</h4>
             <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mohamed-hossam-cp/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/mohamed-hossam1"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://wa.me/+201013429234"><i class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
         </div>
     </footer>
-
 </body>
 </html>
